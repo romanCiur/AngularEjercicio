@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hoja{
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-family: sans-serif;
+}
+form{
+    display: flex;
+    flex-direction:column;
+    /* justify-content: space-around; */
+    font-family: sans-serif;
+    line-height:40px;
+    padding:60px;
+  }
+  button{
+    width:100px;
+    height:35px;
+    background: transparent;
+    border:1px solid blue;
+    color:blue;
+    font-size: 15px;
+    margin:10px 0;
+  }
+  input{
+    height:30px;
+  }
+  input, #letras{
+    width: 100%;
+    border:1px solid gray;  
+  }
+  .hojaA{
+      width: 100%; 
+  }
+  .title{
+      font-size: 1.5rem;
+      line-height: 40px;
+      margin-top: 3rem;
+  }
+  .coment{
+      font-size: 1rem;
+      margin: 2rem 0;
+  }
+  @media screen and (max-width: 500px){
+    .hoja{
+        width: 100%;
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 20px;
+    }
+    .hojaA .title{
+        font-size: 1.2rem;
+    }
+    .title{margin: 0;}
+    form{
+        padding: 0;
+        order: 2;
+    }
+}
